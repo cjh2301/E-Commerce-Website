@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c82f16d7a6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script defer src="./register.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="base.html"><img src="img/qs-high-resolution-logo-transparent.png" class="logo" alt=""></a>
+    <nav class="navbar">
+      <a href="base.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html"><i class="fa fa-user"></i></a></li>
+      <a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      
+    </nav>
+    </header>
+
+    <div class="register_box">
+      <h1>Register</h1>
+      <h4>Fill in your information</h4>
+      <form method="post" id="form" novalidate>         
+
+          <div class="input-control">
+              <label>Username</label>
+              <input type="text" name="username" id="username"  placeholder="abc123">
+              <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+              <label>Email</label>
+              <input type="email" name="email" id="email" placeholder="abc123@gmail.com" required>
+              <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+              <label>Password</label>
+              <input type="password" name="password" id="password" required>
+              <div class="error"></div>
+          </div>
+
+          <div class="input-control">
+              <label>Confirm Password</label>
+              <input type="password" name="password2" id="password2" required>
+              <div class="error"></div>
+          </div>          
+
+          <input type="submit" value="Register" name="submit">
+      </form>
+    
